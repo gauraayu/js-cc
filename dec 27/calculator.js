@@ -25,3 +25,10 @@ let ac=()=>{
     show.innerHTML=store;
 
 }
+let sq=()=>{
+   
+    let show=document.querySelector("#display");
+    store=store*store;
+    show.innerHTML=store;
+
+}
