@@ -11,6 +11,10 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
+          <!-- by goin on aos website it gives animations -->
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <div class="swiper mySwiper">
@@ -27,12 +31,27 @@
             <div class="swiper-slide">slide 9</div>
             <div class="swiper-slide">slide 10</div>
          </div>
-         <div class="swiper-button-next"></div>
+         <div class="swiper-button-next" data-aos="flip-left"
+         data-aos-easing="ease-out-cubic"
+         data-aos-duration="2000">NEXT</div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
 
         </div>
+
+
+
+        <div id="mainbox">
+            <div  data-aos="fade-down" data-aos-duration="2000"></div>
+            <div data-aos="fade-up-right" data-aos-duration="5000"></div>
+        </div>
+        <!-- by goin on aos website it gives animations -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="/slider.js"></script>
+
     </body>
 </html>
